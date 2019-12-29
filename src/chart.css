@@ -1,0 +1,87 @@
+.chart {
+  width: 750px;
+  border: 2px solid #DDD;
+  box-sizing: border-box;
+}
+
+.chart__header {
+  padding: 5px;
+  background: #DDD;
+}
+
+.chart__body {
+  padding: 5px;
+}
+
+.chart__footer {
+  padding: 5px;
+  background: #DDD;
+}
+
+.chart__bars {
+  border-right: 2px dashed #000000;
+}
+
+.chart__bar {
+  display: flex;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.chart__bar:last-child {
+  margin-bottom: 0;
+}
+
+.chart__bar-label {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.chart__bar-value {
+  width: 90%;
+}
+
+.chart__bar-rect {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+}
+
+.chart__categories{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chart__category{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 135px;
+}
+
+.chart__category:last-child{
+  margin-right: 0;
+}
+
+.chart__category-color{
+  width: 20px;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.chart__category-text{
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.chart__category:nth-child(5n) {
+  margin-right: 0;
+}
+.chart__category:nth-child(5n+1):nth-last-child(-n+5),
+.chart__category:nth-child(5n+1):nth-last-child(-n+5) ~ .chart__category {
+  margin-bottom: 0;
+}
